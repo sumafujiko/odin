@@ -1,8 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 #grid {
@@ -10,12 +18,26 @@
     flex-wrap: wrap;
     width: 960px;
     height: 960px;
+    border: 1px solid black;
 }
 
 #grid div {
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    box-sizing: border-box;
     border: 1px solid black;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.button-container button {
+    padding: 5px;
+    margin: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: aliceblue;
+    border-color: black;
+    border-radius: 5px;
 }
